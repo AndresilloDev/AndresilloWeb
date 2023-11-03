@@ -120,6 +120,10 @@ header .content h1 span {
     white-space: nowrap; /* Evita saltos de línea */
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px #99c2ff;
+
+    background-image: linear-gradient(45deg, #0080ff, #aa00ff, #00ffcc);
+    -webkit-background-clip: text;
+    color: transparent;
 }
 
 
@@ -246,6 +250,7 @@ section .header{
 .pricing .card .content{
     flex: 1;
     margin-bottom: 2rem;
+    text-align: justify;
 }
 
 .pricing .card h4{
@@ -384,6 +389,11 @@ footer .column > a:hover{
     .pricing{
         grid-template-columns: repeat(1, 1fr);
     }
+
+    footer{
+        grid-template-columns: 1fr 150px;
+    }
+}
 
     footer{
         grid-template-columns: 1fr 150px;
